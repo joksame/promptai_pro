@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>Prompt AI PRO MAX</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🚀 Prompt AI PRO MAX</h1>
+
+<div class="container">
+  <label>Choose Type:</label>
+  <select id="type">
+    <option value="marketing">Marketing</option>
+    <option value="design">Design</option>
+    <option value="content">Content</option>
+    <option value="programming">Programming</option>
+  </select>
+
+  <label>Topics / Subjects (comma separated):</label>
+  <input id="topics" placeholder="Enter multiple topics, separated by commas">
+
+  <label>Audience / Style / Language:</label>
+  <input id="style" placeholder="Audience or style">
+
+  <label>Tone / Goal / Task:</label>
+  <input id="tone" placeholder="Tone or task">
+
+  <button onclick="generatePrompts()">Generate Prompts</button>
+  <button onclick="downloadPrompts()">Download All</button>
+
+  <textarea id="output" placeholder="Prompts appear here..."></textarea>
+</div>
+
+<script src="engine.js"></script>
+</body>
+</html>
